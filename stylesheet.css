@@ -1,0 +1,70 @@
+body {
+  background-color: #fdd835;
+  color: black;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+#titleHeader {
+  padding-left: 10px;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 25pt;
+}
+
+#ollieIcon {
+  width: calc(20% - 10px);
+  display: inline-block;
+  padding: 0px;
+  vertical-align: bottom;
+  padding-right: 10px;
+}
+
+h1 {
+  font-family: "VT323", monospace;
+  font-size: 56pt;
+  margin-bottom: 6pt;
+}
+
+h2 {
+  font-family: "Space Mono", monospace;
+  font-size: 12pt;
+  color: #1c313a;
+}
+
+p {
+  font-family: "Space Mono", monospace;
+  color: #1c313a;
+  font-size: 11pt;
+}
+
+.container-header {
+  font-family: "VT323", monospace;
+  color: #1c313a;
+  font-size: 20pt;
+  padding-top: 20pt;
+  padding-right: 20pt;
+  width: calc(15% - 20pt - 5px);
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container-body {
+  width: calc(85% - 5px);
+  display: inline-block;
+  padding-top: 10pt;
+  padding-left: 5px;
+}
+
+.titleBody {
+  width: calc(80% - 15px);
+}
+
+.container {
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  border-top: 1px solid #373737;
+  margin-top: 5pt;
+}
