@@ -4,26 +4,28 @@ body {
   width: 95%;
   margin: auto;
   text-align: center;
+  margin-bottom: 100pt;
 }
 
 #titleHeader {
-  text-align: left;
+  text-align: center;
   display: inline-block;
   margin-bottom: 25pt;
+  padding-top: 1em;
 }
 
 #ollieIcon {
-  width: calc(20% - 10px);
-  max-width: 150px;
+  width: 25%;
+  max-width: 200pt;
   display: inline-block;
   padding: 0px;
   vertical-align: bottom;
-  padding-right: 10px;
 }
 
 h1 {
   font-family: "VT323", monospace;
   font-size: 56pt;
+  margin: 0px;
   margin-bottom: 6pt;
 }
 
@@ -33,10 +35,31 @@ h2 {
   color: #1c313a;
 }
 
-p {
+a {
+  color: #001064;
+}
+
+h3 {
   font-family: "Space Mono", monospace;
   color: #1c313a;
   font-size: 11pt;
+  text-align: center;
+  font-weight: bolder;
+}
+
+ul {
+  list-style-type: square;
+}
+
+p,
+li {
+  font-family: "Space Mono", monospace;
+  color: #1c313a;
+  font-size: 11pt;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 .container-header {
@@ -52,13 +75,27 @@ p {
 
 .container-body {
   width: calc(85% - 5px);
-  display: inline-block;
+  display: inline-flex;
+  flex-wrap: wrap;
   padding-top: 10pt;
   padding-left: 5px;
+  align-items: normal;
+}
+
+.container-body-section {
+  flex: 1 1 calc(50% - 25px);
+  padding-left: 10px;
+  margin-right: 5px;
+  border-right: 1px dashed #373737;
+  border-bottom: 1px dashed #373737;
+  vertical-align: top;
 }
 
 .titleBody {
-  width: calc(80% - 15px);
+  width: 100%;
+  display: inline-block;
+  text-align: left;
+  padding: 0px;
 }
 
 .container {
@@ -67,4 +104,10 @@ p {
   width: 90%;
   border-top: 1px solid #373737;
   margin-top: 5pt;
+}
+
+.container.desc {
+  border-top: 0px solid #373737;
+  padding-top: 0px;
+  margin-top: 0px;
 }

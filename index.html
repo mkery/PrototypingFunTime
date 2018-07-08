@@ -4,34 +4,75 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>SSUI Lab</title>
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono|VT323" rel="stylesheet">
   <link rel="stylesheet" href="stylesheet.css" type="text/css">
   </head>
   <body>
       <div id="titleHeader">
         <img id="ollieIcon" src="./images/ollie.png"></img>
-        <div class="container-body titleBody">
+        <div class="titleBody">
         <h1>Prototyping User Interfaces</h1>
-        <h2>05430 Software Stuctures of User Interfaces Lab</h2>
+        <h2>05430 SOFTWARE STRUCTURES OF USER INTERFACES</h2>
       </div>
       </div>
-      <p></p>
+      <div class="container desc">
+        <p>"In lab, you will learn how to design and program effective graphical user interfaces, and how to perform user tests. We will cover a number of prototyping tools and require prototypes to be constructed in each, ranging from animated mock-ups to fully functional programs. Assignments will require implementing UIs, testing that interface with users, and then modifying the interface based on findings. Some class sessions will feature design reviews of student work." - <a href="https://enr-apps.as.cmu.edu/open/SOC/SOCServlet/search">CMU course description</a> </p>
+      </div>
       <div class="container">
         <div class="container-header">HELP</div>
         <div class="container-body">
-          <p>Wednesdays 10:30-11:50am Newell Simon Hall 3002, taught by <a href="http://marybethkery.com/">mkery</a> :D phd student</p>
-          <p>Q/A on Piazza</p>
+          <p>Wednesdays 10:30-11:50am Newell Simon Hall 3002, taught by <a href="http://marybethkery.com/">mkery</a> <i class="em em-sauropod"></i> phd student</p>
+          <p>Q/A on Piazza . Grades on Canvas</p>
           <p>Direct message via email mkery [at] cs.cmu.edu
         </div>
       </div>
       <div class="container">
         <div class="container-header">PROGRAMMING HELP</div>
         <div class="container-body">
-
+          <div class="container-body-section">
+            <h3>Web Dev Style Guide</h3>
+            <p>When your project and code is poorly structured, the world is a sadder place.<i class="em em-rain_cloud"></i></p>
+            <ol>
+              <li><b>Seperate files: </b>index.html, index.js, style.css. You <i>can</i> combine HTML, CSS styling, and javascript all in one HTML file, but it scales miserably, please don't. index.html is the name for your site's home page</li>
+              <li><i class="em em-file_folder"></i><b> Folders: </b>If you have more than 1 javascript file, put them all in a script folder. If you have more than 1 CSS image, put them all in a style folder. If you have images, put them in an image folder. Keep organized. HTML is the exception, keep HTML files in the main project folder.</li>
+              <li><i class="em em-fire"></i><b> MODULARITY: </b>In Javascript, don't copy the same lines of code over and over. If you repeat any chunk of code more than twice, extract it out into a function! If you repeat a color or image more than once in CSS, extract it out into a CSS variable.</li>
+            </ol>
+         </div>
+          <div class="container-body-section">
+            <h3>Basic HTML</h3>
+            <ul>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN Basic HTML Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">W3 tutorials on specific HTML elements & topics</a></li>
+              <li>when in doubt, the only HTML elements you need is div</li>
+            </ul>
         </div>
+        <div class="container-body-section">
+          <h3>CSS</h3>
+          <ul>
+            <li>Avoid absolute width like width=300px; because this breaks on different screen sizes! When possible make width a percent like width=50%</li>
+            <li>To center a div, one common option is to make display=inline-block; and margin=auto. If that fails and the div has a parent, try text-align=center on the parent element.
+            <li><a href="http://howtocenterincss.com/">a web app dedicated to how to center things in CSS</a></li>
+            <li>For complex positioning, math is your friend! Try CSS calc()</li>
+          </ul>
+      </div>
+        <div class="container-body-section">
+          <h3>Javascript</h3>
+          <ul>
+            <li>Javascript (JS) is a language. Since there are so many variants and frameworks out there, it is also called "Vanilla" Javascipt <i class="em em-icecream"></i> <b>We'll focus on vanilla Javascript.</b></li>
+            <li><a href="https://www.codecademy.com/learn/introduction-to-javascript"></a>Code academy Javascript, if you're rusty on basic programming fundementals</li>
+            <li><a href="https://javascript.info/">Javascript tutorials mini-course</a></li>
+            <li><a href="https://www.w3schools.com/jS/default.asp">W3 Schools Javascript tutorials</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics">MDN Javascript tutorials. Lots of advanced content on this site</a></li>
+            <li><b>Frameworks: </b>You may have heard of popular ones like <a href="https://jquery.com/">JQuery</a> or <a href="https://reactjs.org/">React</a> or <a href="https://angular.io/">Angular</a>. JQuery is a good beginner choice, because it makes Vanilla Javascript syntax simpler <i>but</i> JQuery is a lot slower than plain Javascript, so it's losing some popularity as plain Javascript grows and advances.
+            React and Angular are excellent for larger web apps that need to load and animate and change a lot of data-driven divs efficiently. Advised to skip these for simple projects, but we'll try out React later in the course!</li>
+            <li><b><a href="https://coffeescript.org/">Coffeescript<a>, <a href="https://www.typescriptlang.org/">Typescript</a>: </b>are a couple of cool wrapper languages around Javascript. Coffeescript gives Javascript a bit more Python flavor, and Typescript introduces strong typing to Javascript. These are more advanced, but you are welcome to use them!</li>
+          </ul>
+       </div>
+      </div>
       </div>
       <div class="container">
-        <div class="container-header">LESSONS</div>
+        <div class="container-header">LECTURES</div>
         <div class="container-body">
 
         </div>
